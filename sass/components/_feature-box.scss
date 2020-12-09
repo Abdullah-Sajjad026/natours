@@ -1,0 +1,36 @@
+.feature-box {
+    background-color: rgba($color-white, .8);
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 2.5rem;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    transition: all.2s;
+    -webkit-transition: all.2s;
+    -moz-transition: all.2s;
+    -ms-transition: all.2s;
+    -o-transition: all.2s;
+
+    &__icon {
+        font-size: 6rem;
+        margin-bottom: .5rem;
+        display: inline-block;
+        background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    &:hover {
+        transform: translatey(-1.5rem) scale(1.02);
+        -webkit-transform: translatey(-1.5rem) scale(1.02);
+        -moz-transform: translatey(-1.5rem) scale(1.02);
+        -ms-transform: translatey(-1.5rem) scale(1.02);
+        -o-transform: translatey(-1.5rem) scale(1.02);
+        box-shadow: 0 2rem 5rem rgba($color-black, .20);
+    }
+}
