@@ -2,7 +2,7 @@
     width: 75%;
     margin: 0 auto;
     box-shadow: 0 3rem 6rem rgba($color-black, .1);
-    background-color: $color-white;
+    background-color: rgba($color-white, .6);
     border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -40,19 +40,19 @@
     &__img {
         background-size: cover;
         background-position: center;
-        width: 100%;
         height: 100%;
-        transform: scale(1.8);
-        -webkit-transform: scale(1.8);
-        -moz-transform: scale(1.8);
-        -ms-transform: scale(1.8);
-        -o-transform: scale(1.8);
-
+        transform: translateX(-4rem) scale(1.8);
+        -webkit-transform: translateX(-4rem) scale(1.6);
+        -moz-transform: translateX(-4rem) scale(1.8);
+        -ms-transform: translateX(-4rem) scale(1.8);
+        -o-transform: translateX(-4rem) scale(1.8);
         transition: all .5s;
         -webkit-transition: all .5s;
         -moz-transition: all .5s;
         -ms-transition: all .5s;
         -o-transition: all .5s;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
     }
 
     &__text {
@@ -95,11 +95,11 @@
     }
 
     &:hover &__img {
-        transform: scale(1.3);
-        -webkit-transform: scale(1.3);
-        -moz-transform: scale(1.3);
-        -ms-transform: scale(1.3);
-        -o-transform: scale(1.3);
+        transform: translateX(-4rem) scale(1.2);
+        -webkit-transform: translateX(-4rem) scale(1.2);
+        -moz-transform: translateX(-4rem) scale(1.2);
+        -ms-transform: translateX(-4rem) scale(1.2);
+        -o-transform: translateX(-4rem) scale(1.2);
         filter: blur(3px) brightness(80%);
         -webkit-filter: blur(3px) brightness(80%);
     }
