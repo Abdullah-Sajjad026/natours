@@ -34,7 +34,7 @@
 
         &:hover {
             outline: 15px solid $color-primary;
-            transform: scale(1.1);
+            transform: scale(1.1) translateY(-.5rem);
             -webkit-transform: scale(1.1) translateY(-.5rem);
             -moz-transform: scale(1.1) translateY(-.5rem);
             -ms-transform: scale(1.1) translateY(-.5rem);
