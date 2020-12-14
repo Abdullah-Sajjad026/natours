@@ -1050,7 +1050,8 @@ body {
 .navigation__list {
   list-style-type: none;
   text-align: center;
-  transition: all .1s; }
+  transition: all .1s;
+  width: 100%; }
 
 .navigation__item {
   margin: 1rem; }
@@ -1069,6 +1070,12 @@ body {
   .navigation__link:link span, .navigation__link:visited span {
     margin-right: 1.5rem;
     display: inline-block; }
+    @media (max-width: 56.52em) {
+      .navigation__link:link span, .navigation__link:visited span {
+        margin-right: 1rem; } }
+    @media (max-width: 37.5em) {
+      .navigation__link:link span, .navigation__link:visited span {
+        margin-right: .7rem; } }
 
 .navigation__link:hover, .navigation__link:active {
   background-position: 100%;
